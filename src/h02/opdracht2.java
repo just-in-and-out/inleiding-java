@@ -4,20 +4,19 @@ package h02;
 //v3: leesbare text door de programeur geschreven
 //v4: zodat de programma weet waruit het sommige onderdelen vandaan moet halen
 //v5: wat en hoe je iets doet?
+
 import java.awt.*;
 import java.applet.*;
+public class opdracht2 extends Applet{
 
-public class opdracht2 extends Applet {
-
-    public void init() {
+    public void init(){
         setBackground(Color.blue);
     }
 
-    public void paint(Graphics g) {
+    public void paint(Graphics g){
         g.setColor(Color.yellow);
-        g.drawString("Justin", 50, 60 );
-        g.drawString("de Laat", 50, 100);
+        g.drawString("Justin",20,20);
+        g.drawString("de Laat",20,40);
     }
-
 
 }
