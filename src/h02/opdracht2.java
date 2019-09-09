@@ -1,8 +1,9 @@
 package h02;
 //v1: Machinetaal is een taal waarin intsructies geschreven om een proces outvoeren
 //v2: java, programma's zoals intel, een computer
-//v3:
-//v4:
+//v3: leesbare text door de programeur geschreven
+//v4: zodat de programma weet waruit het sommige onderdelen vandaan moet halen
+//v5: wat en hoe je iets doet?
 import java.awt.*;
 import java.applet.*;
 
