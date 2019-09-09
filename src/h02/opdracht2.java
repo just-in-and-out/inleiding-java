@@ -4,8 +4,8 @@ package h02;
 //v3: leesbare text door de programeur geschreven
 //v4: zodat de programma weet waruit het sommige onderdelen vandaan moet halen
 //v5: wat en hoe je iets doet?
-import java.awt.*;
-import java.applet.*;
+import java.awt.*;a
+import java.applet.*;a
 
 public class opdracht2 extends Applet {
 
