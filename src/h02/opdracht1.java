@@ -2,7 +2,7 @@ package h02;
 
 import java.awt.*;
 import java.applet.*;
-a
+
 public class opdracht1 extends Applet {
 
     public void init() {
