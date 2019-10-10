@@ -7,7 +7,7 @@ public class opdracht7p2 extends Applet {
 
     public void init() {
 
-        setSize(1000,1000);
+        setSize(1980,1080);
 
     }
 

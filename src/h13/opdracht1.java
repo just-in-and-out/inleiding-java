@@ -19,13 +19,6 @@ public class opdracht1 extends Applet {
 
     public void paint(Graphics g) {
 
-        int x1 = 20;
-        int x2 = 30 ;
-        int x3 = 40 ;
-        int y1 = 50 ;
-        int y2 = 40 ;
-        int y3 = 50 ;
-
         tekenDriehoek(g, 20,50,35,20,50,50);
 
     }
