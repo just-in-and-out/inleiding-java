@@ -7,21 +7,25 @@ import java.awt.event.ActionListener;
 
 public class opdracht3 extends Applet {
 
-    TextField textFields1;
+    public TextField[] textFields;
 
     private int teller = 0;
+    int middle = 0;
+    int numbers;
+    public String converter;
 
     public void init() {
 
         Button OK = new Button("OK");
         OK.addActionListener(new Oklisetener());
+
         add(OK);
+        converter = " ";
 
         while (teller < 5){
 
-            textFields1 = new TextField();
-            add(textFields1);
-
+            textFields[teller] = new TextField();
+            add(textFields[teller]);
             teller++;
 
         }
@@ -29,14 +33,15 @@ public class opdracht3 extends Applet {
 
     public void paint(Graphics g) {
 
-        g.drawString(" " + teller,20,20);
+        g.drawString(" " + middle,20,20);
 
     }
 
-    static class Oklisetener implements ActionListener{
-
+    class Oklisetener implements ActionListener{
         public void actionPerformed(ActionEvent e) {
-
+            converter = textFields[teller].getText();
+            numbers = Integer.parseInt(converter);
+            repaint();
         }
     }
 }
