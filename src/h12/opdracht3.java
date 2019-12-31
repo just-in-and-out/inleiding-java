@@ -1,9 +1,11 @@
+
 package h12;
 
 import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 public class opdracht3 extends Applet {
 
@@ -11,13 +13,17 @@ public class opdracht3 extends Applet {
 
     private int teller = 0;
     int middle = 0;
-    int numbers;
+    int number;
     public String converter;
+    int numbers[];
+    int counter = 0;
 
     public void init() {
 
         Button OK = new Button("OK");
         OK.addActionListener(new Oklisetener());
+
+        textFields = new TextField[5];
 
         add(OK);
         converter = " ";
@@ -35,13 +41,18 @@ public class opdracht3 extends Applet {
 
         g.drawString(" " + middle,20,20);
 
+        g.drawString(" "+ numbers[counter],50,50);
+
     }
 
     class Oklisetener implements ActionListener{
         public void actionPerformed(ActionEvent e) {
-            converter = textFields[teller].getText();
-            numbers = Integer.parseInt(converter);
-            repaint();
+            for (counter = 0; counter < 5;counter++){
+                converter = textFields[counter].getText();
+                numbers[counter] = Integer.parseInt(converter);
+                repaint();
+            }
+            Arrays.sort(numbers);
         }
     }
 }
