@@ -3,19 +3,20 @@ package h12;
 import java.applet.Applet;
 import java.awt.*;
 
-public class opdracht2 extends Applet {
+public class Opdracht2 extends Applet {
 
-    Button kopie;
-    int aantal = 0;
+    Button[] buttons;
 
     public void init() {
 
-        while (aantal < 25){
+        buttons = new Button[25];
 
-            kopie = new Button("ok");
-            add(kopie);
-
-            aantal++;
+        for (int i = 0; i < buttons.length; i++) {
+            Button button = new Button();
+            buttons[i] = button;
+        }
+        for (int i = 0; i < buttons.length; i++) {
+            add(buttons[i]);
         }
     }
 
